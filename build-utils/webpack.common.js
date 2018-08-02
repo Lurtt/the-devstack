@@ -2,6 +2,9 @@ const webpack = require('webpack')
 const paths = require('./paths')
 
 const config = {
+  resolve: {
+    modules: [paths.inputPath, 'node_modules'],
+  },
   entry: {
     bundle: paths.inputPath,
   },
