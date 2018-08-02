@@ -1,11 +1,14 @@
+import React from 'react'
+import { shallow } from 'enzyme'
+import toJson from 'enzyme-to-json'
+
 import App from './App'
 
-jest.mock('./components/Loading', () => 'Loading')
-
 describe('<App />', () => {
-  test(`Should has 'from' field `, () => {
-    const app = new App()
+  it('should create instance', () => {
+    const wrapper = shallow(<App />)
 
-    expect(app.from).toEqual(0)
+    expect(wrapper.containsMatchingElement(<h1>hi there!</h1>)).toEqual(true)
+    expect(toJson(wrapper)).toMatchSnapshot()
   })
 })
