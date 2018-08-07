@@ -1,10 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Container = styled.h2`
+  font-size: 2rem;
+`
 
 const Example = () => (
-  <h2>
+  <Container>
     This is example component and it will be removed soon. I just test if
     relative path works!! IT WORKS!!
-  </h2>
+  </Container>
 )
 
 export default Example
