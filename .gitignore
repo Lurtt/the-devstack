@@ -7,6 +7,10 @@
 # production
 /dist
 
+# cypress e2e
+/cypress/videos
+/cypress/screenshots
+
 # misc
 .DS_Store
 .env.local

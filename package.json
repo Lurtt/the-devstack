@@ -14,6 +14,7 @@
     "build": "yarn webpack --env.env prod",
     "prebuild": "rimraf dist && yarn format && yarn lint",
     "cypress": "cypress open",
+    "cypress:all": "cypress run",
     "test": "jest --watch",
     "precommit": "lint-staged",
     "format": "yarn prettier --write",

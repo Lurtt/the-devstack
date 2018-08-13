@@ -32,7 +32,7 @@ $ yarn build
 $ yarn test
 ```
 
-## Feature list`
+## Feature list
 
 - :white_check_mark: Enzyme & Jest
 - :white_check_mark: Enzyme Snapshot testing
