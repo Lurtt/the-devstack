@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> should display correctly 1`] = `
+<React.Fragment>
+  <header>
+    Toolbar
+  </header>
+  Here is the content
+  <footer>
+    Footer
+  </footer>
+</React.Fragment>
+`;

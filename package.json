@@ -15,7 +15,8 @@
     "prebuild": "rimraf dist && yarn format && yarn lint",
     "cypress": "cypress open",
     "cypress:all": "cypress run",
-    "test": "jest --watch",
+    "test": "jest --config src/jest.config.js",
+    "test:watch": "yarn test  --watch",
     "precommit": "lint-staged",
     "format": "yarn prettier --write",
     "lint": "eslint --ext .js src --fix",
@@ -25,13 +26,6 @@
     "webpack-dev-server": "webpack-dev-server --port 3030 --hot",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "setupTestFrameworkScriptFile": "./src/setupTests.js",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
   },
   "lint-staged": {
     "*.js": [

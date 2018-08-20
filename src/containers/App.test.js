@@ -5,10 +5,13 @@ import toJson from 'enzyme-to-json'
 import App from './App'
 
 describe('<App />', () => {
-  it('should create instance', () => {
-    const wrapper = shallow(<App />)
+  let wrapper
 
-    expect(wrapper.containsMatchingElement(<h1>hi there!</h1>)).toEqual(true)
+  beforeEach(() => {
+    wrapper = shallow(<App />)
+  })
+
+  it('should display correctly', () => {
     expect(toJson(wrapper)).toMatchSnapshot()
   })
 })

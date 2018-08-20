@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 
 import 'styles/normalize'
-import { Example } from 'components'
+import { Layout } from 'components'
 
 class App extends Component {
   render() {
-    return <Example />
+    return (
+      <Layout>
+        <div>here is the content</div>
+      </Layout>
+    )
   }
 }
 
