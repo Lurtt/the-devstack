@@ -1,11 +1,20 @@
 import React, { Fragment } from 'react'
+import styled from 'styled-components'
 
 const Layout = ({ children }) => (
   <Fragment>
-    <header>Toolbar</header>
+    <StyledHeader>Toolbar</StyledHeader>
     {children}
-    <footer>Footer</footer>
+    <StyledFooter>Footer</StyledFooter>
   </Fragment>
 )
+
+const StyledHeader = styled.header`
+  color: red;
+`
+
+const StyledFooter = styled.footer`
+  color: blue;
+`
 
 export default Layout

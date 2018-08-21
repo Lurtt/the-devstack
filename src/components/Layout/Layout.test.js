@@ -1,6 +1,5 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
 
 import Layout from './Layout'
 
@@ -12,11 +11,16 @@ describe('<Layout />', () => {
   })
 
   it('should display correctly', () => {
-    expect(toJson(wrapper)).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
   })
 
   it('should display header', () => {
-    expect(wrapper.find('header').text()).toBe('Toolbar')
+    expect(
+      wrapper
+        .find('StyledHeader')
+        .children()
+        .text()
+    ).toBe('Toolbar')
   })
 
   it('should contain two children', () => {

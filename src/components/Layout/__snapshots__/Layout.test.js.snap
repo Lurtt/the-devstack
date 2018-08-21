@@ -2,12 +2,12 @@
 
 exports[`<Layout /> should display correctly 1`] = `
 <React.Fragment>
-  <header>
+  <StyledHeader>
     Toolbar
-  </header>
+  </StyledHeader>
   Here is the content
-  <footer>
+  <StyledFooter>
     Footer
-  </footer>
+  </StyledFooter>
 </React.Fragment>
 `;

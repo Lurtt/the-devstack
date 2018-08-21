@@ -2,8 +2,8 @@
 
 exports[`<App /> should display correctly 1`] = `
 <Layout>
-  <div>
+  <TempContent>
     here is the content
-  </div>
+  </TempContent>
 </Layout>
 `;

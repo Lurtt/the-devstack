@@ -1,5 +1,6 @@
 module.exports = {
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
+  testURL: 'http://localhost/',
   setupTestFrameworkScriptFile: './setupTests.js',
   snapshotSerializers: ['enzyme-to-json/serializer'],
   moduleDirectories: ['node_modules', 'src'],
