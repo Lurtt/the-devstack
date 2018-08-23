@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
+import { media } from 'styles/mixins'
+
 const Layout = ({ children }) => (
   <Fragment>
     <StyledHeader>Toolbar</StyledHeader>
@@ -14,7 +16,11 @@ const StyledHeader = styled.header`
 `
 
 const StyledFooter = styled.footer`
-  color: blue;
+  background: blue;
+
+  ${media.desktop`background: green;`}
+  ${media.tablet`background: red;`}
+  ${media.phone`background: yellow;`}
 `
 
 export default Layout
